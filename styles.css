@@ -24,25 +24,29 @@ p{
 }
 
 .more:after {
-  content: "\25BC";
-  font-size: 8px;
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  margin-top: -10px;
-  font-size: 16px;
-  color: #333;
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    height: 2px;
+    width: 13px;
+    background: #cfdca0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
 }
 
 .less:after {
-  content: "\25B2";
-  font-size: 8px;
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  margin-top: -10px;
-  font-size: 16px;
-  color: #333;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    right: 32px;
 }
 
 ul {
